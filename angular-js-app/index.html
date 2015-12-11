@@ -6,11 +6,474 @@
   <link rel="stylesheet" media="all" href="css/custom.css">
 </head>
 <body>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">AWJ Base Project  </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#persoana">Persoana</a></li>
+            <li><a href="#produs">Produs</a></li>
+			<li><a href="#evaluare">Evaluare</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <hr/>
 
   <div class="container">
     <div ng-controller="HomeController">
-      <h1>{{ helloWorld }}</h1>
+      <h1>Tadaaaah</h1>
     </div>
+  </div>
+
+  <hr/>
+
+  <!-- /persoana -->
+  <div class="container">
+    <h1 id = "persoana">Persoana</h1>
+    <h2>Lista Produse</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Nume</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Mara</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Isa</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Claudia</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+     
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Editeaza Persoane</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Nume">Nume</label>
+            <input type="text" class="form-control" id="Nume" placeholder="Nume">
+          </div>
+          <button type="submit" class="btn btn-info">Salveaza</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Adauga Persoana</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Nume">Nume</label>
+            <input type="text" class="form-control" id="Nume" placeholder="Id">
+          </div>
+         
+          <button type="submit" class="btn btn-success">Adauga</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Afiseaza Persoana</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://i1.wp.com/www.thehollywoodnews.com/wp-content/uploads/Kate-Mara.jpg" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h1>Mara</h1>
+        <p> 1 </p>
+     
+       
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+  <!-- /produs-->
+  <div class="container">
+    <h1 id = "produs">Produs</h1>
+    <h2>Lista cu Produsele</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Nume</th>
+		<th>Pret</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>mmm</td>
+		<td>10</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>nnn</td>
+		<td>15</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>bbb</td>
+		<td>20</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Editeaza Produsele</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Nume">Nume</label>
+            <input type="text" class="form-control" id="Nume" placeholder="Nume">
+          </div>
+		   <div class="form-group">
+            <label for="Pret">Pret</label>
+            <input type="text" class="form-control" id="Pret" placeholder="Pret">
+          </div>
+          <button type="submit" class="btn btn-info">Salveaza</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Adauga Produs</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Nume">Nume</label>
+            <input type="text" class="form-control" id="Nume" placeholder="Nume">
+          </div>
+		  <div class="form-group">
+            <label for="Pret">Pret</label>
+            <input type="text" class="form-control" id="Pret" placeholder="Pret">
+          </div>
+          <button type="submit" class="btn btn-success">Adauga</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Afiseaza  Produs</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://www.crwflags.com/fotw/images/m/mu%7Dmmm.gif" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h1>mmm</h1>
+        <p>1, 10</p>
+        
+      </div>
+    </div>
+  </div>
+  <hr/>
+ <!-- /evaluare-->
+  <div class="container">
+    <h1 id = "serviciu">Evaluare</h1>
+    <h2>Lista Evaluari</h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Nota</th>
+		<th>Nume</th>
+        <th style="width:210px;">Options</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>10</td>
+		<td>Evaluare Performanta</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1</td>
+		<td>Evaluare Aspect</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>7</td>
+		<td>hgdfckjmd</td>
+        <td>
+          <a href="">
+            <span class="label label-success">
+              Open
+              <span class="glyphicon glyphicon-folder-open"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-primary">
+              Edit
+              <span class="glyphicon glyphicon-edit"></span>
+            </span>
+          </a>
+          <a href="">
+            <span class="label label-danger">
+              Remove
+              <span class="glyphicon glyphicon-remove"></span>
+            </span>
+          </a>
+        </td>
+      </tr>
+      
+    </table>
+
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Editeaza Evaluarile</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Nota">Nota</label>
+            <input type="text" class="form-control" id="Nota" placeholder="Nota">
+          </div>
+		   <div class="form-group">
+            <label for="Nume">Nume</label>
+            <input type="text" class="form-control" id="Nume" placeholder="Nume">
+          </div>
+          <button type="submit" class="btn btn-info">Salveaza</button>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-md-offset-6">
+        <h2>Adauga Evaluari</h2>
+        <form action="" method="">
+          <div class="form-group">
+            <label for="ID">ID</label>
+            <input type="text" class="form-control" id="ID" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="Nota">Nota</label>
+            <input type="text" class="form-control" id="Nota" placeholder="Nota">
+          </div>
+		  <div class="form-group">
+            <label for="Nume">Nume</label>
+            <input type="text" class="form-control" id="Nume" placeholder="Nume">
+          </div>
+          <button type="submit" class="btn btn-success">Adauga</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Afiseaza Evaluare</h2>
+      </div>
+      <div class="col-md-2">
+        <img src="http://monografiecontabila.ro/schoolbusiness/wp-content/uploads/sites/3/2015/03/evaluarea-performantelor-870x400.png" class="img-thumbnail"/>
+      </div>
+      <div class="col-md-10">
+        <h1>Evaluare Performanta</h1>
+        <p>1, 10</p>
+        
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="container">
+    <footer class="footer">
+      <p class="text-muted pull-left">AWJ Base Project &copy; 2015-2016</p>
+      <p class="text-muted pull-right">Adamache Iohana Carla, 334AA</p>
+    </footer>
   </div>
 
   <script src="js/jquery-1.11.3.min.js"></script>
